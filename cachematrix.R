@@ -6,9 +6,9 @@
 
 ## makeCacheMatrix is used to 
 ##   set the matrix values
-##   retrieve the matrix values
+##   retrieve (get) the matrix values
 ##   set the inverse of the matrix
-##   retrieve the inverse of the matrix (if previously calculated)
+##   retrieve (get) the inverse of the matrix (if previously calculated)
 
 makeCacheMatrix <- function(x = matrix()) {
         x_inv <- NULL
@@ -29,7 +29,8 @@ makeCacheMatrix <- function(x = matrix()) {
 ## the matrix has been calculated since the last time the
 ## values of the matrix were set.  If so, the inverse is 
 ## retrieved, otherwise 'solve' is used to calculate the
-## inverse.
+## inverse.  Additional arguments may be passed through to
+## 'solve' if desired.
 
 cacheSolve <- function(x, ...) {
         ## Return a matrix that is the inverse of 'x'
