@@ -1,8 +1,9 @@
-## These functions provide a special list object to hold a matrix,
-## and 'cache' the inverse of the matrix.
-## a call to cachesolve on this object, will calculate the inverse if it hasn't 
-## yet been or if the matrix has been changed since it was last calculated,
-## otherwise the matrix inverse is retrieved from this object.
+## These functions provide a special list object to hold a 
+## matrix, and 'cache' the inverse of the matrix.
+## A call to cachesolve on this object, will calculate the 
+## inverse if it hasn't yet been or if the matrix has been 
+## changed since it was last calculated, otherwise the 
+## matrix inverse is retrieved from this object.
 
 ## makeCacheMatrix is used to 
 ##   set the matrix values
